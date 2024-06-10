@@ -1,0 +1,18 @@
+18.05.2024
+
+Trzeba mając dane z cz.1 i cz.2 odpowiedzieć na pytania:
+1. Jak wartości z tabeli w części II-kolumny: a, b, c, d, e wpływają na wartości w tabeli w I części zawarte w kolumnach: A, B, C, D, E, F?
+2. (*) Jak wartości z tabeli I części-kolumny A, B, D, E wpływają na wartości w kolumnach: G, H, K, L, M, N, P, R?
+
+
+Podpowiedzi:
+1. Przygotować do analizy - priorytet
+2. Wielkość próby - mała, wyniki mogą być słabe (trudno będzie uzyskać istotne wyniki)
+3. Założenia modelu i ocena jakości - czy regresja liniowa to dobry model?
+4. Weryfikacja założeń: współliniowość - VIF/korelacje.
+5. Dobrać optymalny (o największej wartości informacyjnej) - metoda krokowa (step)
+6. Niepożądane zjawisko - koincydencja (wyeliminować).
+7. Intepretacja wyników. 
+
+https://pl.lksteelpipe.com/news/hardness-conversion-of-hb-hr-hv-with-tensile-s-29116152.html
+
