@@ -1,0 +1,61 @@
+19.05.2024
+Analiza wieloczynnikowa
+###
+
+Testy:
+- KMO
+    KMO()
+- Test sferyczności Bartletta - test adekwatności (H0: brak korelacji, H1: istnieje korelacja) - niskie p-Value oznacza, że odrzucamy H0
+    cortest.bartlett(dane)
+
+Istnieją dwa etapy analizy czynnikowej
+1. Eksploracyjna EFA
+2. Konfirmoacyjna CFA
+3. SEM
+
+####
+Dane w excelu (ankieta):
+- zielone pola: wpływ poszczególnych grup na ...
+- pomarańczowe pola: które działania zajmują radzie nadzorczej najwięcej czasu
+- niebieskie pola: istotność znaczenia działań rady nadzorczej
+- stalowe pola: ...  -> dane jakościowe nie są brane pod uwagę w AF (usuwamy)
+- żółte pola: 
+
+
+Do zrobienia (dla zarządu tylko; rada nadzorcza zrobiona na zajęciach):
+1. EFA: czy w zbirze danych (albo poszczególnych grupach - kolory pól w execelu) można zidentyfikować zmienne latentne
+2. CFA: ocena jak te zmienne latentne międzuy sobą oddziałują
+library(lavaan)
+myData <- read.csv(dane.csv)
+myModel <- '
+    f1 =~ item1 + item2 + item3
+    f2 =~ item4 + item5 + item6
+    f3 =~ item7 + item8 + item9
+    '
+
+gdzie:  f1 - to zmienne latentne ???
+        item1 - to zmienne obserwowane ???
+
+
+
+Interpretacja graficzna FA:
+- kierunek strzałki
+- siła korelacji (-1,1) na strzałce
+
+
+CFA (od wiersza 235 w podanym skrypcie przykładowym):
+
+Ocena dopasowania modelu: funkcja semPaths()
+
+nfi - indeks dopasowania znormalizowanego (jedna z miar oceny modelu): im bliżej 1 tym lepiej
+inne miary dopasowania, np: nnfi, ifi, pnfi, rfi
+
+Ładunki czynnikowe (siła (-1,1) i kierunek)
+
+
+Wariancje resztkowe (pętle skierowane do siebie samego) - ilość wariancji tej zmiennej, która nie została objaśniona przez (model???)
+
+
+
+
+
