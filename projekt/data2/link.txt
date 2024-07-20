@@ -1,0 +1,3 @@
+https://openpsychometrics.org/_rawdata/
+https://www.kaggle.com/datasets/lucasgreenwell/nature-relatedness-scale-responses
+
